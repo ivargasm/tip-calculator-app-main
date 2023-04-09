@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="title_container">
+      <p class="title">SPLI</p>
+      <p class="title">TTER</p>
+    </div>
+    <div class="tip_container">
+      <div class="tip">
+        <div class="bill">
+          <label for="bill">Bill</label>
+          <div>
+            <span class="dl">$</span>
+            <input type="number" id='bill' placeholder="0">            
+          </div>
+        </div>
+        <div class="select_tip">
+          <p>Select tip %</p>
+          <div class="tips_containers">
+            <div class="radio_tip">
+              <input type="radio" id="tip5" name='tip' value='5'>
+              <label for="tip5" class="btn_tip">5%</label>              
+            </div>
+            <div class="radio_tip">
+              <input type="radio" id="tip10" name='tip' value='10'>
+              <label for="tip10" class="btn_tip">10%</label>              
+            </div>
+            <div class="radio_tip">
+              <input type="radio" id="tip15" name='tip' value='15'>
+              <label for="tip15" class="btn_tip">15%</label>              
+            </div>
+            <div class="radio_tip">
+              <input type="radio" id="tip25" name='tip' value='55'>
+              <label for="tip25" class="btn_tip">25%</label>              
+            </div>
+            <div class="radio_tip">
+              <input type="radio" id="tip50" name='tip' value='50'>
+              <label for="tip50" class="btn_tip">50%</label>              
+            </div>
+            <div class="free_tip">
+              <input type="text" id="free" name='tip' placeholder="%">
+            </div>
+          </div>
+        </div>  
+        <div class="total_people">
+          <div class="messages_people">
+            <p>Number of people</p>
+            <p class="error hide">Can´t be zero</p>              
+          </div>
+          <div class="people">
+            <label for="">#</label>
+            <input type="number" placeholder="0" id='total_people'>
+          </div>
+        </div>
+      </div>
+      <div class="total">
+        <div class="totals_per_person">
+          <div class="tip_per_person amounts">
+            <div class="total_messages">
+              <p>Tip amount</p>
+              <p>/ person</p>
+            </div>
+            <div class="total_tip_amount">
+              <p id="total_tip_person">0.0</p>
+            </div>
+          </div>
+          <div class="total_per_person amounts">
+            <div class="total_messages">
+              <p>Tip amount</p>
+              <p>/ person</p>
+            </div>
+            <div class="total_tip_amount">
+              <p id="total_person">0.0</p>
+            </div>
+          </div>
+        </div>
+        <div class="reset">
+          <button class='btn-reset' id='reset'>RESET</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
